@@ -1,0 +1,25 @@
+html {
+  font-size: 100%;
+  line-height: 1.5;
+ }
+* {
+  font-family: "Open Sans", "HelveticaNeue",
+  Helvetica, Arial, sans-serif ;
+}
+.container {
+  display: block;
+  width: 1020px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cabecalho-principal h1 {
+  padding: 25px;
+}
+
+aside.contatos {
+  width: 19%;
+}
+
+section.formulario-contatos {
+  width: 79%;
+}

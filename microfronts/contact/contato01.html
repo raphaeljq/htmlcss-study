@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title> Formulário de contato 01</title>
+    <link type="text/css" rel="stylesheet" href="contato01.css"/>
+
+  </head>
+  <body>
+    <div class="container">
+      <header class="cabecalho-principal">
+        <h1>Contato</h1>
+      </header>
+      <aside class="contatos">
+        <h3>
+          DEPARTAMENTO PRIMEIRO
+        </h3>
+        <ul>
+          <li>
+            <span class="icone email"></span>
+            <p>demandas@departamento.com.br</p>
+          </li>
+          <li>
+            <span class="icone telefone"></span>
+            <p> +55(21)9999-0000</p>
+          </li>
+          <li>
+            <span class="icone telefone"></span>
+            <p> +55(21)8888-0001</p>
+          </li>
+
+        </ul>
+        <h3>
+          DEPARTAMENTO SEGUNDO
+        </h3>
+        <ul>
+          <li>
+            <span class="icone telefone"></span>
+            <p>+0800 2834628</p>
+          </li>
+        </ul>
+        <h3>
+          ESCRITORIOS
+        </h3>
+        <h4>
+          Rio de Janeiro
+        </h4>
+        <p>Praia de Botafogo, 190
+          <br/> 6 andar
+          <br /> Exibir Mapa 
+        </p>
+        <h4>
+          São Paulo
+        </h4>
+        <p>Av. Paulista, 1294
+          <br/> 15 andar
+          <br /> Exibir Mapa 
+        </p>
+      
+      </aside>
+      <section class="formulario-contatos">
+        <header>
+
+          <h2 class="blue">
+            Fale Conosco
+          </h2>
+          <p>Em caso de dúvidas ou sugestões entre em contato conosco:</p>
+          <h3 class="dica blue">
+            Informações Necessárias
+          </h3>
+        
+        </header>
+        <section class="form-contato">
+          <form>
+            <div class="input-group tamanho-completo">
+              <label for="assuntos">
+                <p>Assunto <sup>*</sup></p>
+              </label>
+              <select name="assuntos" id="assuntos" required>
+                <option value="certificacao">Certificação</option>
+                <option value="concursos-em-andamento">Concursos Em Andamento</option>
+                <option value="editorial">Editorial</option>
+                <option value="estudos">Estudos</option>
+                <option value="eventos">Eventos</option>
+                <option value="exames-da-oab">Exames da OAB</option>                
+              </select> 
+            </div>
+            <div class="input-group tamanho-completo">
+              <label for="nome">
+                <p>Nome <sup>*</sup></p>
+              </label>
+              <input type="text" id="nome" name="nome" placeholder="Nome" required/>
+            </div>
+            <div class="input-group tamanho-completo">
+              <label for="empresa">
+                <p>Empresa <sup>*</sup></p>
+              </label>
+              <input type="text" id="empresa" name="empresa" placeholder="empresa"required />
+            </div>
+            <div class="input-group sem-tamanho">
+              <label for="ddd"><p>DDD<sup>*</sup> </p></label>
+              <input type="text" id="ddd" name="ddd" placeholder="DDD" required/>
+            </div>
+            <div class="input-group sem-tamanho">
+              <label for="telefone"><p>Telefone<sup>*</sup> </p></label>
+              <input type="text" id="telefone" name="telefone" placeholder="Telefone" required/>
+            </div>
+            <div class="input-group sem-tamanho">
+              <label for="ramal"><p>Ramal<sup>*</sup> </p></label>
+              <input type="text" id="ramal" name="ramal" placeholder="ramal" />
+            </div>
+            <div class="input-group tamanho-completo">
+              <label for="email">
+                <p>E-mail <sup>*</sup></p>
+              </label>
+              <input type="text" id="email" name="email" placeholder="E-mail" required/>
+            </div>
+            <div class="input-group tamanho-completo">  
+              <label for="como-conheceu">
+                <p>Como você como conheceu a gente? <sup>*</sup></p>
+              </label>
+              <select name="assuntos" id="assuntos" required>
+                <option value="facebook">Facebook</option>
+                <option value="instagram">Instagram</option>
+                <option value="twitter">Twitter</option>
+                <option value="google">Google</option>
+                <option value="gmail">Gmail</option>
+                <option value="linkedin">Linkedin</option>                
+              </select> 
+            </div>
+            <div class="input-group tamanho-completo">
+              <label for="mensagem">
+                <p>Mensagem <sup>*</sup></p>
+              </label>
+              <textarea name="mensagem" id="mensagem" placeholder="Mensagem" required></textarea>
+            </div>
+            <div class="input-group tamanho-completo">
+              <input type="submit" id="enviar" name="enviar"/>
+            </div>
+          </form>  
+        </section>
+      </section>  
+    </div>
+    
+    
+  </body>
+</html>
