@@ -2,8 +2,8 @@
 <html lang="pt-BR">
   <head>
     <title> Formulário de contato 01</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
     <link type="text/css" rel="stylesheet" href="contato01.css"/>
-
   </head>
   <body>
     <div class="container">
@@ -16,26 +16,21 @@
         </h3>
         <ul>
           <li>
-            <span class="icone email"></span>
-            <p>demandas@departamento.com.br</p>
+            <p class="icone email">demandas@departamento.com.br</p>
           </li>
           <li>
-            <span class="icone telefone"></span>
-            <p> +55(21)9999-0000</p>
+            <p class="icone telefone"> +55(21)9999-0000</p>
           </li>
           <li>
-            <span class="icone telefone"></span>
-            <p> +55(21)8888-0001</p>
+            <p class="icone telefone"> +55(21)8888-0001</p>
           </li>
-
         </ul>
         <h3>
           DEPARTAMENTO SEGUNDO
         </h3>
         <ul>
-          <li>
-            <span class="icone telefone"></span>
-            <p>+0800 2834628</p>
+          <li></li>
+            <p  class="icone telefone">+0800 2834628</p>
           </li>
         </ul>
         <h3>
@@ -55,11 +50,9 @@
           <br/> 15 andar
           <br /> Exibir Mapa 
         </p>
-      
       </aside>
       <section class="formulario-contatos">
         <header>
-
           <h2 class="blue">
             Fale Conosco
           </h2>
@@ -67,7 +60,6 @@
           <h3 class="dica blue">
             Informações Necessárias
           </h3>
-        
         </header>
         <section class="form-contato">
           <form>
@@ -76,6 +68,7 @@
                 <p>Assunto <sup>*</sup></p>
               </label>
               <select name="assuntos" id="assuntos" required>
+                <option value="selecione"> - Selecione</option>
                 <option value="certificacao">Certificação</option>
                 <option value="concursos-em-andamento">Concursos Em Andamento</option>
                 <option value="editorial">Editorial</option>
@@ -96,18 +89,21 @@
               </label>
               <input type="text" id="empresa" name="empresa" placeholder="empresa"required />
             </div>
-            <div class="input-group sem-tamanho">
-              <label for="ddd"><p>DDD<sup>*</sup> </p></label>
-              <input type="text" id="ddd" name="ddd" placeholder="DDD" required/>
+            <div class="telefone-group">
+              <div class="input-group sem-tamanho">
+                <label for="ddd"><p>DDD<sup>*</sup> </p></label>
+                <input type="text" id="ddd" name="ddd" placeholder="DDD" required/>
+              </div>
+              <div class="input-group sem-tamanho">
+                <label for="telefone"><p>Telefone<sup>*</sup> </p></label>
+                <input type="text" id="telefone" name="telefone" placeholder="Telefone" required/>
+              </div>
+              <div class="input-group sem-tamanho">
+                <label for="ramal"><p>Ramal</p></label>
+                <input type="text" id="ramal" name="ramal" placeholder="ramal" />
+              </div>
             </div>
-            <div class="input-group sem-tamanho">
-              <label for="telefone"><p>Telefone<sup>*</sup> </p></label>
-              <input type="text" id="telefone" name="telefone" placeholder="Telefone" required/>
-            </div>
-            <div class="input-group sem-tamanho">
-              <label for="ramal"><p>Ramal<sup>*</sup> </p></label>
-              <input type="text" id="ramal" name="ramal" placeholder="ramal" />
-            </div>
+            
             <div class="input-group tamanho-completo">
               <label for="email">
                 <p>E-mail <sup>*</sup></p>
@@ -134,13 +130,11 @@
               <textarea name="mensagem" id="mensagem" placeholder="Mensagem" required></textarea>
             </div>
             <div class="input-group tamanho-completo">
-              <input type="submit" id="enviar" name="enviar"/>
+              <input type="submit" id="enviar" name="enviar" value="Enviar Mensagem"/>
             </div>
           </form>  
         </section>
       </section>  
     </div>
-    
-    
   </body>
 </html>

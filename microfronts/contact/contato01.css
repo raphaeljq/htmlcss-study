@@ -1,25 +1,117 @@
 html {
-  font-size: 100%;
-  line-height: 1.5;
- }
+  font-size: 1em;;
+  line-height: 1.5em;
+}
 * {
   font-family: "Open Sans", "HelveticaNeue",
   Helvetica, Arial, sans-serif ;
 }
+/* cores*/
+.blue { color: #4682b4;}
+
+header { width: 100%;}
+header, aside.contatos { 
+  border-bottom: 1px solid #E0E0E0;
+  box-shadow: 0 2px 0 0 rgba(0,0,0,0.03);
+  }
+
+h1, h2, h3 { 
+
+      font-weight: 100;}
+h3 {font-size: 0.938rem; font-weight: 700;}        
 .container {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   width: 1020px;
   margin-left: auto;
   margin-right: auto;
+  justify-content: start;
 }
 .cabecalho-principal h1 {
   padding: 25px;
 }
 
 aside.contatos {
-  width: 19%;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  border-right: 1px solid #E0E0E0;
+  box-shadow: 0 2px 0 0 rgba(0,0,0,0.03);
+  background: none repeat scroll 0 0 #FCFCFC;
 }
 
-section.formulario-contatos {
-  width: 79%;
+
+
+.contatos ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: unset;
 }
+
+.contatos p { 
+  margin:0; 
+  margin-bottom: 5px; font-size: 16px;
+  color: #666;}
+  /*icones */
+.email,
+.telefone { 
+      background: url(https://fgvprojetos.fgv.br/sites/fgvprojetos.fgv.br/themes/fgvprojetos_responsive/images/phone-mail-icon.png) no-repeat 0 0
+  transparent;
+      background-position-x: 0px;
+      background-position-y: 0px;
+      padding-left: 20px !important;
+      background-position: 0 8px;
+}
+.telefone { background-position: 0 -13px; }
+  
+section.formulario-contatos {
+  width: 51%;
+  
+}
+
+aside.contatos, .formulario-contatos {
+  padding: 50px;
+}
+
+.dica {
+  border-left: 5px solid #4682b4;
+  padding-left: 20px;
+}
+
+
+/* Assuntos */
+input, select, textarea {
+  width: 100%;
+  margin-bottom: 25px;;
+}
+
+input, select, textarea { padding: 10px; border-radius: 4px; border: 1px solid #ccc;
+
+}
+
+input[type="submit"] {
+  background-color: #003d7d;
+  border: 1px solid  #003d7d;
+  color: White;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-appearance: button;
+
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #86c2e6; }
+option { font-size: 14px;}
+label { font-size: 12px;}
+
+label p { margin: 0px; margin-bottom: 5px;}
+
+.tamanho-completo {
+  width: 100%;
+}
+.sem-tamanho { width: 50px; margin-right: 50px;}
+form { display: flex; flex-direction: column;}
+.telefone-group { display: flex; flex-direction: row;}
