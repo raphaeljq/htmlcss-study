@@ -1,0 +1,93 @@
+body {margin: 0;}
+ul {
+  list-style: none;
+  margin: 0;
+  padding:0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px; 
+  text-decoration: none; 
+}
+
+.active {
+  
+  color: #f1f1f1;
+}
+.menu-aside--verde {
+  background-color: #4CAF50;
+}
+.menu-aside--azul {
+  background-color: #2d89ef;
+}
+.menu-aside--amarelo {
+  background-color: goldenrod;
+}
+
+/* container */
+.container {
+  margin-left: 25%;
+  padding: 1px 16px;
+  height: 1000px;
+
+}
+.menu-aside--full {
+  width: 25%;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  
+}
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.menu-aside--horizontal {
+  width: unset;
+  background-color: #333;
+  height: auto;
+  overflow: hidden;
+}
+
+.menu-aside--horizontal li {
+  float: left;
+}
+.menu-aside--horizontal li a { 
+  color: white;
+  padding: 14px 16px;
+}
+.menu-aside--horizontal li.float-right {
+  float: right;
+  }
+
+  /* barra de navegacao fixa no topo da tela*/
+.fixed-navigation-top {
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+.container-fixed { 
+  background-color:#1abc9c;
+  height:1500px;
+  overflow: hidden;
+}
+
+.container__top { 
+  padding:20px;
+  margin-top:30px;
+}
+.container__bottom {
+  padding: 0;
+  margin-top: 0;
+}
+.fixed-navigation-bottom {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
