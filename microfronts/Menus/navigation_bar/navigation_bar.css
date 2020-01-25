@@ -91,3 +91,34 @@ li a:hover:not(.active) {
   width: 100%;
 }
 
+/* barra de navegacao cinza */
+.gray-navbar {
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+.gray-navbar li a:not(.active) {
+  
+  color: #666;
+}
+.gray-navbar li a:hover:not(.active) {
+  background-color: #ddd; 
+  
+}
+
+/* sticky nav bar*/
+
+.sticky-navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+
+}
+
+/*  menu responsivo aereo*/
+ul.topnav li a {text-align: center;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.float-right,
+  ul.topnav li {float: none;}
+}
