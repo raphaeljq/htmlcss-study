@@ -1,0 +1,65 @@
+* { box-sizing: border-box;}
+body { margin: 0em; 
+      font-family: Arial, Helvetica, sans-serif;  
+      font-size: 16px;
+}
+h1 { font-size: 1.6rem;}
+h2 { font-size: 1.5rem;}
+h3 { font-size: 1.4rem;}
+h4 { font-size: 1.3rem;}
+h5 { font-size: 1.2rem;}
+h6 { font-size: 1.1rem;}
+
+a { font-size: 16px; font-weight: bolder;}
+
+h1,h2,h3,h4,h5,h6 {
+  text-align: center;
+  margin: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.principal { flex-direction: column;}
+header { width: 100%;}
+header.container { 
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+}
+div.card.container {
+  flex-direction: column;
+  
+}
+
+.card .card--foto img {
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 18px 17px 18px #aaa;
+  
+}
+
+.card .card--titulo {
+  color: midnightblue;
+  
+}
+.card .card--subtitulo {
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+  color: dimgray;
+  display: flex;
+  justify-content: center;
+}
+.redes { display: flex; flex-direction: row;}
+.redes .ico { width: 3.6rem; padding: 10px;}
+
+.links { flex-direction: column; width: 100%;text-align: center; padding: 1.5rem;}
+.links h3 { margin: 1rem auto; width: 10;}
+.links a { text-decoration: none;font-size:  1.2rem; border-radius: 48px; padding: 20px; background-color:midnightblue ; color: white; width: 100%; margin: 10px auto;}
+.links a:hover { background-color: steelblue;  border: 1px solid midnightblue; }
+.about {  padding: 20px;}
